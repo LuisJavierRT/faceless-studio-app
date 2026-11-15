@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Faceless Studio privacy</title>
+  <meta name="description" content="How Faceless Studio, a personal desktop tool, uses the Google and YouTube data its owner grants it.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <header>
+    <div class="brand">Faceless <span>Studio</span></div>
+    <nav class="muted"><a href="./">Home</a><a href="privacy.html">Privacy policy</a></nav>
+  </header>
+
+  <h1>Privacy policy</h1>
+  <p class="muted">Effective 15 November 2026</p>
+
+  <p>Faceless Studio is a personal desktop application used by a single person, its owner, to publish their own
+    videos on their own YouTube channels. It has no other users and offers no public service. This policy explains
+    what it does with the data Google gives it access to.</p>
+
+  <h2>Data it accesses</h2>
+  <p>Only after the owner signs in with Google and grants the permissions, and only for the channel they choose:</p>
+  <ul>
+    <li><strong>Upload videos</strong> (<code>youtube.upload</code>): to upload the owner's finished videos, private,
+      with their title, description, tags and scheduled publish time.</li>
+    <li><strong>Read the channel</strong> (<code>youtube.readonly</code>): the channel's name and id, and the status
+      and public counts (views, likes, comments, regional availability) of the videos it uploaded.</li>
+    <li><strong>Read analytics</strong> (<code>yt-analytics.readonly</code>): the channel's YouTube Analytics
+      reports, to see which videos perform well.</li>
+  </ul>
+  <p>It does not access email, contacts, files, other Google services, other people's channels, or any data of
+    viewers.</p>
+
+  <h2>Where the data is stored</h2>
+  <ul>
+    <li>The permission (OAuth refresh token) is stored in the system keychain of the owner's computer.</li>
+    <li>The channel's name and id, upload settings and the records of uploaded videos are stored as files on the
+      same computer.</li>
+    <li>Nothing is stored on, or sent to, any server other than Google's own APIs. There is no analytics, tracking,
+      advertising or third-party service in the application.</li>
+  </ul>
+
+  <h2>Sharing</h2>
+  <p>The data is not sold, shared, transferred or disclosed to anyone. It is not used for advertising, and it is not
+    used to train any machine-learning or AI model.</p>
+
+  <h2>Google API Services User Data Policy</h2>
+  <p>Faceless Studio's use and transfer of information received from Google APIs adheres to the
+    <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data
+    Policy</a>, including the Limited Use requirements. Faceless Studio uses YouTube API Services: see the
+    <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> and the
+    <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+
+  <h2>Removing access and deleting data</h2>
+  <ul>
+    <li>Disconnecting a channel in the application revokes its permission at Google and deletes the stored token.</li>
+    <li>Access can also be revoked at any time at
+      <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+    <li>Deleting the application's folder removes all the files it kept.</li>
+  </ul>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy: open an issue at
+    <a href="https://github.com/LuisJavierRT/faceless-studio-app/issues">github.com/LuisJavierRT/faceless-studio-app/issues</a>.</p>
+
+  <h2>Changes</h2>
+  <p>If what the application does with Google data changes, this page will be updated first, with a new effective
+    date.</p>
+
+  <footer class="muted">
+    <p><strong>En español:</strong> Faceless Studio es una herramienta personal. Solo sube los videos de su dueño a
+      sus propios canales, lee los datos básicos del canal y sus métricas, guarda el permiso en el llavero de su
+      computadora y no envía nada a ningún servidor que no sea de Google. No vende ni comparte datos, ni los usa para
+      publicidad o para entrenar modelos de IA. El acceso se revoca desconectando el canal o en
+      myaccount.google.com/permissions.</p>
+  </footer>
+</main>
+</body>
+</html>
