@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Faceless Studio</title>
+  <meta name="description" content="Faceless Studio: a personal desktop tool that uploads its owner's own videos to their own YouTube channels.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <header>
+    <div class="brand">Faceless <span>Studio</span></div>
+    <nav class="muted"><a href="./">Home</a><a href="privacy.html">Privacy policy</a></nav>
+  </header>
+
+  <h1>A personal video studio that runs on one computer</h1>
+  <p>Faceless Studio is a private desktop tool used by a single creator to make short videos and publish them on
+    their own YouTube channels. It is not a public service: there are no accounts, no sign-ups and no other users.</p>
+
+  <h2>What it does with YouTube</h2>
+  <p>When its owner connects one of their channels, Faceless Studio uses the YouTube Data API to:</p>
+  <ul>
+    <li>upload the owner's finished videos to that channel, private first, with a scheduled publish time;</li>
+    <li>read the channel's basic details (its name and id) and the status of the videos it uploaded;</li>
+    <li>read the channel's YouTube Analytics (views, watch time) to see which videos work.</li>
+  </ul>
+  <p>It never deletes or edits existing videos, never posts comments, and never accesses any other channel or
+    Google service.</p>
+
+  <div class="card">
+    <strong>Where the data stays.</strong> Everything runs on the owner's own computer. The permission Google grants
+    is stored in that computer's system keychain; nothing is sent to any server other than Google's own APIs. See the
+    <a href="privacy.html">privacy policy</a>.
+  </div>
+
+  <h2>Español</h2>
+  <p>Faceless Studio es una herramienta personal de escritorio que usa una sola persona para producir videos cortos y
+    publicarlos en sus propios canales de YouTube. Solo sube videos del propio dueño, lee los datos básicos del canal y
+    sus métricas; nunca borra ni edita videos. Todo se queda en su computadora.</p>
+
+  <footer class="muted">
+    <p>Faceless Studio uses YouTube API Services. By connecting a channel you agree to the
+      <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>; Google's handling of your data is
+      described in the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+  </footer>
+</main>
+</body>
+</html>
